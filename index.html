@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+a
+<title>Techfest CyberVerse 2026</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
+
+</head>
+
+<body>
+
+<!-- Progress Bar -->
+<div id="progressBar"></div>
+
+<!-- Loader -->
+<div id="loader">
+    <h1>TECHFEST CYBERVERSE</h1>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor"></div>
+
+<!-- Three.js Canvas -->
+<canvas id="bg"></canvas>
+
+<!-- Navbar -->
+<nav>
+
+<div class="logo">
+
+<div class="tf-logo">
+TF
+</div>
+
+<div class="logo-text">
+<h2>Techfest</h2>
+<p>Future Technology Festival</p>
+</div>
+
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#innovation">Innovation</a></li>
+
+<li><a href="#timeline">Timeline</a></li>
+
+<li><a href="#team">Team</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="controls">
+
+<button id="themeBtn">
+🌙
+</button>
+
+<button id="musicBtn">
+🎵
+</button>
+
+</div>
+
+</nav>
+
+<audio id="bgmusic" loop>
+<source src="assets/music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+TECHFEST
+2026
+</h1>
+
+<h2 id="typingText"></h2>
+
+<p>
+
+Explore Artificial Intelligence,
+Cyber Security, Robotics,
+Quantum Computing and Future Technology.
+
+</p>
+
+<a href="#innovation" class="btn">
+
+EXPLORE NOW
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2 class="section-title">
+About CyberVerse
+</h2>
+
+<p>
+
+CyberVerse is a futuristic digital experience
+built to showcase innovation, creativity,
+science and emerging technologies through
+interactive storytelling and immersive design.
+
+</p>
+
+</section>
+
+<!-- INNOVATION -->
+
+<section class="innovation" id="innovation">
+
+<h2 class="section-title">
+
+Future Technologies
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🤖 Artificial Intelligence</h3>
+<p>
+Machine Learning & AI Systems
+</p>
+</div>
+
+<div class="card">
+<h3>🚀 Space Technology</h3>
+<p>
+Exploring Beyond Earth
+</p>
+</div>
+
+<div class="card">
+<h3>🔐 Cyber Security</h3>
+<p>
+Protecting Digital Assets
+</p>
+</div>
+
+<div class="card">
+<h3>⚛ Quantum Computing</h3>
+<p>
+Future Computing Power
+</p>
+</div>
+
+<div class="card">
+<h3>🧬 Biotechnology</h3>
+<p>
+Future Human Innovation
+</p>
+</div>
+
+<div class="card">
+<h3>🌐 Web 4.0</h3>
+<p>
+The Next Internet Evolution
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section id="timeline">
+
+<h2 class="section-title">
+
+Innovation Timeline
+
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-box">
+
+<h3>2024</h3>
+
+<p>
+Foundation
+</p>
+
+</div>
+
+<div class="timeline-box">
+
+<h3>2025</h3>
+
+<p>
+Growth
+</p>
+
+</div>
+
+<div class="timeline-box">
+
+<h3>2026</h3>
+
+<p>
+Global Expansion
+</p>
+
+</div>
+
+<div class="timeline-box">
+
+<h3>2030</h3>
+
+<p>
+Future Vision
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="stat-box">
+
+<h1>50+</h1>
+
+<p>Events</p>
+
+</div>
+
+<div class="stat-box">
+
+<h1>10K+</h1>
+
+<p>Participants</p>
+
+</div>
+
+<div class="stat-box">
+
+<h1>100+</h1>
+
+<p>Mentors</p>
+
+</div>
+
+<div class="stat-box">
+
+<h1>25+</h1>
+
+<p>Countries</p>
+
+</div>
+
+</section>
+
+<!-- SHOWCASE -->
+
+<section class="showcase">
+
+<h2 class="section-title">
+
+Innovation Showcase
+
+</h2>
+
+<div class="showcase-grid">
+
+<div class="showcase-card">
+
+<h3>AI Assistant</h3>
+
+<p>
+Smart AI powered future systems
+</p>
+
+</div>
+
+<div class="showcase-card">
+
+<h3>Autonomous Robots</h3>
+
+<p>
+Intelligent robotic systems
+</p>
+
+</div>
+
+<div class="showcase-card">
+
+<h3>Smart Cities</h3>
+
+<p>
+Connected future infrastructure
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TEAM -->
+
+<section id="team">
+
+<h2 class="section-title">
+
+Our Team
+
+</h2>
+
+<div class="team-container">
+
+<div class="member">
+
+<div class="avatar"></div>
+
+<h3>Innovation Lead</h3>
+
+</div>
+
+<div class="member">
+
+<div class="avatar"></div>
+
+<h3>Tech Director</h3>
+
+</div>
+
+<div class="member">
+
+<div class="avatar"></div>
+
+<h3>Creative Head</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">
+
+Contact Us
+
+</h2>
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email"
+required>
+
+<textarea
+rows="6"
+placeholder="Your Message">
+</textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>
+
+TECHFEST CYBERVERSE 2026
+
+</h3>
+
+
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
